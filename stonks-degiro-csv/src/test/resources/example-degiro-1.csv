@@ -1,0 +1,3 @@
+Data,Hora,Produto,ISIN,Bolsa de,Bolsa,Quantidade,Preços,,Valor local,,Valor,,Taxa de Câmbio,Custos de transação,,Total,,ID da Ordem
+20-08-2018,14:19,X1,PTX1,ELI,XLIS,30,2.8400,EUR,-85.20,EUR,-85.20,EUR,,-0.55,EUR,-85.75,EUR,guid2
+17-08-2018,12:07,X2,PTX2,ELI,XLIS,20,4.3460,EUR,-86.92,EUR,-86.92,EUR,,-0.55,EUR,-87.47,EUR,guid1

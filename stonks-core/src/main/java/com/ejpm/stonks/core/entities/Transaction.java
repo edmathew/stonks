@@ -11,18 +11,16 @@ import java.time.LocalTime;
 @ToString
 public class Transaction {
 
-  public enum TransactionType {
-    BUY, SELL
-  }
-
   private LocalDate date;
   private LocalTime time;
   private String productName;
-  private String isin;
   private int quantity;
-  private TransactionType type;
-  private String currency;
   private BigDecimal unitPrice;
+
+
+  private String isin;
+  private String currency;
+
   private BigDecimal totalPrice;
   private BigDecimal exchangeRate;
   private BigDecimal totalPriceAfterExchange;
@@ -67,14 +65,6 @@ public class Transaction {
 
   public void setQuantity(int quantity) {
     this.quantity = quantity;
-  }
-
-  public TransactionType getType() {
-    return type;
-  }
-
-  public void setType(TransactionType type) {
-    this.type = type;
   }
 
   public String getCurrency() {

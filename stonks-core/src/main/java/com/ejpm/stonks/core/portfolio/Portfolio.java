@@ -7,14 +7,13 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.ejpm.stonks.core.entities.Transaction.TransactionType.BUY;
 
 public class Portfolio {
 
   private List<PortfolioEntry> entries = new ArrayList<>();
 
   public void applyToPortfolio(final Transaction transaction) {
-    if (BUY == transaction.getType())
+    if (transaction.getQuantity() > 0)
       handleBuyTransaction(transaction);
     else
       handleSellTransaction(transaction);

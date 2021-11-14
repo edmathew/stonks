@@ -19,7 +19,7 @@ public class PortfolioEntry {
   }
 
   public void removePosition(final Transaction t) {
-    int quantityToRemove = t.getQuantity();
+    int quantityToRemove = t.getQuantity() * -1;
     while (quantityToRemove > 0) {
       final Transaction firstEntry = activePositions.get(0);
       if (firstEntry.getQuantity() < quantityToRemove) {

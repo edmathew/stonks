@@ -13,7 +13,23 @@
     </properties>
     <modules>
         <module>stonks-core</module>
+        <module>stonks-degiro-csv</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.opencsv</groupId>
+                <artifactId>opencsv</artifactId>
+                <version>5.5.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ejpm</groupId>
+                <artifactId>stonks-core</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
